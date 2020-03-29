@@ -19,7 +19,7 @@ export default class SchedulerData {
         this.isEventPerspective = isEventPerspective;
         this.resizing = false;
         this.scrollToSpecialMoment = false;
-        this.documentWidth = 0;
+        this.documentWidth = Math.min(window.innerWidth, document.documentElement.clientWidth);
 
         this.localeMoment = moment;
         if(!!localeMoment)
