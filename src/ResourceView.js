@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {PropTypes} from 'prop-types'
-import {AiFillMinusSquare} from 'react-icons/ai'
-
+import {AiFillMinusSquare} from 'react-icons/ai';
+import {AiFillPlusSquare} from 'react-icons/ai';
 class ResourceView extends Component {
 
     constructor(props) {
