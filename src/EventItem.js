@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {PropTypes} from 'prop-types';
-import {Popover} from 'react-bootstrap';
+import {Popover,OverlayTrigger} from 'react-bootstrap';
 
 import EventItemPopover from './EventItemPopover';
 import {CellUnits, DATETIME_FORMAT} from './index';
@@ -483,6 +483,8 @@ class EventItem extends Component {
 
         let titleText = schedulerData.behaviors.getEventTextFunc(schedulerData, eventItem);
         let content = (
+            <Popover>
+            <Popover.Content>
             <EventItemPopover
                 {...this.props}
                 eventItem={eventItem}
@@ -490,6 +492,8 @@ class EventItem extends Component {
                 startTime={eventItem.start}
                 endTime={eventItem.end}
                 statusColor={bgColor}/>
+                </Popover.Content>
+            </Popover>
         );
 
         let start = localeMoment(eventItem.start);
@@ -525,13 +529,13 @@ class EventItem extends Component {
                             )
                         }
                     </div> :
-                    <Popover placement="bottomLeft" content={content} trigger="hover">
+                    <OverlayTrigger placement="bottom" overlay={content} trigger={["hover","focus"]}>
                         {
                             connectDragPreview(
                                 connectDragSource(a)
                             )
                         }
-                    </Popover>
+                    </OverlayTrigger>
             )
         );
     }

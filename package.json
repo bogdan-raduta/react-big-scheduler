@@ -1,6 +1,6 @@
 {
   "name": "react-big-scheduler",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A scheduler and resource planning component built for React and made for modern browsers (IE10+)",
   "keywords": [
     "scheduler",
@@ -40,6 +40,7 @@
     "react-dnd": "^7.5.0",
     "react-dnd-html5-backend": "^7.5.0",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.10.0",
     "rrule": "^2.6.0"
   },
   "devDependencies": {
