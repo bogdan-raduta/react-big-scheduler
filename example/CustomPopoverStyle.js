@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import {PropTypes} from 'prop-types' 
 //import moment from 'moment'
 //import 'moment/locale/zh-cn';
-import Col from 'antd/lib/col'
-import Row from 'antd/lib/row'
-import Button from 'antd/lib/button'
+import {Col} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import Scheduler, {SchedulerData, ViewTypes, DATE_FORMAT, DemoData} from '../src/index'
 import Nav from './Nav'
 import ViewSrcCode from './ViewSrcCode'

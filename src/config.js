@@ -53,7 +53,6 @@ export default {
     checkConflict: false,
     scrollToSpecialMomentEnabled: true,
     eventItemPopoverEnabled: true,
-    calendarPopoverEnabled: true,
     recurringEventsEnabled: true,
     headerEnabled: true,
     displayWeekend: true,

@@ -1,13 +1,12 @@
-import React, {Component} from 'react'
-import {PropTypes} from 'prop-types'
-import Col from 'antd/lib/col'
-import Row from 'antd/lib/row'
-import 'antd/lib/grid/style/index.css'
+import React, {Component} from 'react';
+import {PropTypes} from 'prop-types';
+import {Col} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 import Scheduler, {SchedulerData, ViewTypes, DnDSource, DemoData} from '../src/index'
-import {DnDTypes} from './DnDTypes'
-import TaskItem from './TaskItem'
-import TaskList from './TaskList'
-import ResourceItem from './ResourceItem'
+import {DnDTypes} from './DnDTypes';
+import TaskItem from './TaskItem';
+import TaskList from './TaskList';
+import ResourceItem from './ResourceItem';
 import ResourceList from './ResourceList'
 import Nav from './Nav'
 import ViewSrcCode from './ViewSrcCode'

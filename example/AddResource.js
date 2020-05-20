@@ -5,11 +5,6 @@ import Nav from './Nav'
 import ViewSrcCode from './ViewSrcCode'
 import withDragDropContext from './withDnDContext'
 import AddResourceForm from './AddResourceForm'
-import 'antd/lib/style/index.css';
-import 'antd/lib/modal/style/index.css';
-import 'antd/lib/button/style/index.css'
-import 'antd/lib/form/style/index.css'
-import 'antd/lib/input/style/index.css'
 class AddResource extends Component{
     constructor(props){
         super(props);

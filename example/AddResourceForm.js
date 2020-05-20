@@ -1,6 +1,6 @@
-import React from 'react'
-import { Modal, Form, Input, Radio } from 'antd';
-const FormItem = Form.Item;
+import React from 'react';
+import { Modal } from 'react-bootstrap';
+
 
 
 const AddResourceForm = Form.create()(
@@ -10,20 +10,30 @@ const AddResourceForm = Form.create()(
         return (
             <Modal
                 visible={visible}
-                title="New Resource"
-                okText="Create"
-                onCancel={onCancel}
-                onOk={onCreate}
+                
             >
+            <Modal.Header closeButton>
+            <Modal.Title>New Resource</Modal.Title>
+            </Modal.Header>
+                <Modal.Body>
                 <Form layout="vertical" >
-                    <FormItem label="Name">
+                    <Form.Label>Name</Form.Label> 
                         {getFieldDecorator('name', {
                             rules: [{ required: true, message: 'Please input the name of the resource!' }],
                         })(
-                            <Input />
+                            <Form.Control type="text" />
                         )}
-                    </FormItem>
+                    
                 </Form>
+                </Modal.Body>
+                <Modal.Footer>
+          <Button variant="secondary" onClick={onCancel}>
+            Cancel
+          </Button>
+          <Button variant="primary" onClick={onCreate}>
+          Create
+          </Button>
+        </Modal.Footer>
             </Modal>
         );
     }

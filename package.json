@@ -1,14 +1,13 @@
 {
   "name": "react-big-scheduler",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "A scheduler and resource planning component built for React and made for modern browsers (IE10+)",
   "keywords": [
     "scheduler",
     "react-component",
     "react",
     "react-big-scheduler",
-    "resource planning",
-    "antd"
+    "resource planning"
   ],
   "files": [
     "lib/",
@@ -32,11 +31,12 @@
     "lint"
   ],
   "dependencies": {
-    "antd": "^3.16.6",
+    "bootstrap": "^4.5.0",
     "cpy": "^3.4.1",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.1",
     "react-dnd": "^7.5.0",
     "react-dnd-html5-backend": "^7.5.0",
     "react-dom": "^16.8.6",

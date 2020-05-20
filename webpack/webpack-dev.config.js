@@ -52,10 +52,6 @@ module.exports = {
   ]},
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.NormalModuleReplacementPlugin(
-      /node_modules\/antd\/lib\/style\/index\.less/,
-      path.resolve(root, 'src/less/antd-globals-hiding-hack.less')
-    ),
   ],
   devtool: "cheap-source-map"
 };
